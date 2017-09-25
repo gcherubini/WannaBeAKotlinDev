@@ -7,7 +7,7 @@ import com.fittech.gcherubini.fittechandroid.R
 import com.fittech.gcherubini.fittechandroid.databinding.ActivityHomeBinding
 import com.fittech.gcherubini.fittechandroid.model.User
 import com.fittech.gcherubini.fittechandroid.view.BaseActivity
-import com.fittech.gcherubini.fittechandroid.view.Workout.ListActivity
+import com.fittech.gcherubini.fittechandroid.view.List.ListActivity
 
 class HomeActivity : BaseActivity() {
 

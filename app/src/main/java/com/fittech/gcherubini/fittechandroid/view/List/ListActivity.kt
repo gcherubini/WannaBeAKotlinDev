@@ -1,4 +1,4 @@
-package com.fittech.gcherubini.fittechandroid.view.Workout
+package com.fittech.gcherubini.fittechandroid.view.List
 
 import android.databinding.DataBindingUtil
 import android.os.Bundle
