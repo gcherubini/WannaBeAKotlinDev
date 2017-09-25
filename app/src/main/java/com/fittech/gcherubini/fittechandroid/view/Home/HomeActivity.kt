@@ -7,6 +7,7 @@ import com.fittech.gcherubini.fittechandroid.R
 import com.fittech.gcherubini.fittechandroid.databinding.ActivityHomeBinding
 import com.fittech.gcherubini.fittechandroid.model.User
 import com.fittech.gcherubini.fittechandroid.view.BaseActivity
+import com.fittech.gcherubini.fittechandroid.view.GithubRepositories.GithubRepositoriesActivity
 import com.fittech.gcherubini.fittechandroid.view.List.ListActivity
 
 class HomeActivity : BaseActivity() {
@@ -20,6 +21,10 @@ class HomeActivity : BaseActivity() {
 
         binding.btnListRecyclerView.setOnClickListener {
             moveForward(ListActivity())
+        }
+
+        binding.btnGithubUserRepos.setOnClickListener{
+            moveForward(GithubRepositoriesActivity())
         }
     }
 }
