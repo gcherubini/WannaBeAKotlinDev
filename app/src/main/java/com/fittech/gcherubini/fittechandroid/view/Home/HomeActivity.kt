@@ -7,7 +7,7 @@ import com.fittech.gcherubini.fittechandroid.R
 import com.fittech.gcherubini.fittechandroid.databinding.ActivityHomeBinding
 import com.fittech.gcherubini.fittechandroid.model.User
 import com.fittech.gcherubini.fittechandroid.view.BaseActivity
-import com.fittech.gcherubini.fittechandroid.view.Workout.WorkoutActivity
+import com.fittech.gcherubini.fittechandroid.view.Workout.ListActivity
 
 class HomeActivity : BaseActivity() {
 
@@ -18,8 +18,8 @@ class HomeActivity : BaseActivity() {
         binding.setVariable(BR.user, user)
         binding.executePendingBindings()
 
-        binding.btnWorkout.setOnClickListener {
-            moveForward(WorkoutActivity())
+        binding.btnListRecyclerView.setOnClickListener {
+            moveForward(ListActivity())
         }
     }
 }

@@ -21,17 +21,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@{user.name + ` vamos treinar!?`}"
+            android:text="@{` Hello ` + user.name}"
             tools:text="User Name"
             android:textSize="20sp"/>
 
         <Button
-            android:id="@+id/btn_workout"
+            android:id="@+id/btn_list_recycler_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@android:color/transparent"
-            android:text="MEU TREINO"
+            android:text="Simple List with recycler view"
             android:textSize="14sp"
             android:textStyle="bold"/>
 
