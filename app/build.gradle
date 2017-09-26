@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'realm-android'
 
 android {
     compileSdkVersion 26
@@ -22,6 +23,9 @@ android {
     }
     dataBinding {
         enabled = true
+    }
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
     }
 }
 
@@ -47,4 +51,7 @@ dependencies {
 
     // rx
     compile "io.reactivex.rxjava2:rxandroid:2.0.1"
+
+    // realm database
+    compile 'com.github.vicpinm:krealmextensions:1.0.4'
 }

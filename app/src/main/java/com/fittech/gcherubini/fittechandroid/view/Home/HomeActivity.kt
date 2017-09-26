@@ -9,6 +9,7 @@ import com.fittech.gcherubini.fittechandroid.model.User
 import com.fittech.gcherubini.fittechandroid.view.BaseActivity
 import com.fittech.gcherubini.fittechandroid.view.GithubRepositories.GithubReposActivity
 import com.fittech.gcherubini.fittechandroid.view.List.ListActivity
+import com.fittech.gcherubini.fittechandroid.view.Realm.RealmDbActivity
 
 class HomeActivity : BaseActivity() {
 
@@ -25,6 +26,10 @@ class HomeActivity : BaseActivity() {
 
         binding.btnGithubUserRepos.setOnClickListener{
             moveForward(GithubReposActivity())
+        }
+
+        binding.btnRealmDatabase.setOnClickListener{
+            moveForward(RealmDbActivity())
         }
     }
 }
