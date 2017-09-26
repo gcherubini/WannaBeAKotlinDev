@@ -21,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@{` Hello ` + user.name}"
+            android:text="@{` Hello ` + user.name + `\ndatabinding is working`}"
             tools:text="User Name"
             android:textSize="20sp"/>
 
@@ -39,7 +39,6 @@
             android:id="@+id/btn_github_user_repos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:background="@android:color/transparent"
             android:text="GitHub user repositories"
             android:textSize="14sp"

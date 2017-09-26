@@ -27,7 +27,7 @@
             android:parentActivityName=".view.Home.HomeActivity" />
 
         <activity
-            android:name=".view.GithubRepositories.GithubRepositoriesActivity"
+            android:name=".view.GithubRepositories.GithubReposActivity"
             android:label="@string/title_activity_git_user_repos"
             android:theme="@style/AppTheme.NoActionBar"
             android:parentActivityName=".view.Home.HomeActivity" />

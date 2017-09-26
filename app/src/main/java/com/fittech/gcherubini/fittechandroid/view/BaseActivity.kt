@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity
 import android.content.Intent
 import android.support.v7.app.AlertDialog
 
-
 open class BaseActivity : AppCompatActivity(), BaseActivityInterface {
 
     override fun moveForward(activity: AppCompatActivity) {
@@ -15,8 +14,8 @@ open class BaseActivity : AppCompatActivity(), BaseActivityInterface {
         val alert = AlertDialog.Builder(this).create()
         alert.setMessage(error)
 
-        alert.setButton(AlertDialog.BUTTON_POSITIVE, "OK", {
-            _, _ -> alert.dismiss()
+        alert.setButton(AlertDialog.BUTTON_POSITIVE, "OK", { _, _ ->
+            alert.dismiss()
         })
 
         alert.show()
