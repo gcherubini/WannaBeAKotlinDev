@@ -32,9 +32,11 @@ class RealmDbActivity : BaseActivity() {
     }
 
     private fun onPersistUserBtnClick() {
-        if (binding.etUserName?.text?.toString()!!.isNotBlank()) {
+        if (binding.etUserName?.text?.toString()!!.isNotBlank()
+                && binding.etUserAge?.text?.toString()!!.isNotBlank()) {
             val newUser = UserRealm()
             newUser.name = binding.etUserName.text.toString()
+            newUser.age = binding.etUserAge.text.toString()
             persistUser(newUser)
         } else {
             showError("Please, fill input correctly")
@@ -43,11 +45,11 @@ class RealmDbActivity : BaseActivity() {
 
     private fun persistUser(user: UserRealm) {
         realm.executeTransactionAsync({ bgRealm ->
-            bgRealm.copyToRealm(user)
+            bgRealm.copyToRealmOrUpdate(user)
         }, {
             showPersistedUsers()
         }) {
-            showError("User already persisted")
+            showError("Error inserting/updating user")
         }
     }
 
