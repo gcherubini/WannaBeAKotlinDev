@@ -2,24 +2,22 @@ package com.fittech.gcherubini.fittechandroid.view.GithubRepositories
 
 import android.databinding.DataBindingUtil
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View.GONE
 import android.view.View.VISIBLE
-import android.widget.ProgressBar
 import com.fittech.gcherubini.fittechandroid.R
 import com.fittech.gcherubini.fittechandroid.databinding.ActivityGithubUserReposBinding
 import com.fittech.gcherubini.fittechandroid.model.GithubRepository
 import com.fittech.gcherubini.fittechandroid.network.GithubApi
-import com.fittech.gcherubini.fittechandroid.view.BaseActivity
+import com.fittech.gcherubini.fittechandroid.view.showError
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_github_user_repos.*
 
-/**
- * Created by guilherme on 22/09/17.
- */
-class GithubReposActivity : BaseActivity() {
+
+class GithubReposActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityGithubUserReposBinding
     private var disposable: Disposable? = null

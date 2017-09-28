@@ -18,6 +18,7 @@
            android:id="@+id/et_user_age"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
+           android:inputType="numberDecimal"
            android:hint="User Age"/>
 
        <Button

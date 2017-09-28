@@ -1,16 +1,17 @@
-package com.fittech.gcherubini.fittechandroid.view.Realm
+package com.fittech.gcherubini.fittechandroid.view.RealmDatabase
 
 import android.databinding.DataBindingUtil
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import com.fittech.gcherubini.fittechandroid.R
 import com.fittech.gcherubini.fittechandroid.databinding.ActivityRealmDbBinding
-import com.fittech.gcherubini.fittechandroid.view.BaseActivity
 import io.realm.Realm
 import com.fittech.gcherubini.fittechandroid.model.UserRealm
+import com.fittech.gcherubini.fittechandroid.view.showError
 
 
-class RealmDbActivity : BaseActivity() {
+class RealmDbActivity : AppCompatActivity() {
     lateinit private var binding: ActivityRealmDbBinding
     lateinit private var realm: Realm
 
@@ -36,7 +37,7 @@ class RealmDbActivity : BaseActivity() {
                 && binding.etUserAge?.text?.toString()!!.isNotBlank()) {
             val newUser = UserRealm()
             newUser.name = binding.etUserName.text.toString()
-            newUser.age = binding.etUserAge.text.toString()
+            newUser.age = Integer.parseInt(binding.etUserAge.text.toString())
             persistUser(newUser)
         } else {
             showError("Please, fill input correctly")

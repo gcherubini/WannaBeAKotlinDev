@@ -7,5 +7,5 @@ import io.realm.annotations.RealmClass
 open class UserRealm: RealmObject() {
     @PrimaryKey
     open var name: String = ""
-    open var age: String = ""
+    open var age: Int = 0
 }

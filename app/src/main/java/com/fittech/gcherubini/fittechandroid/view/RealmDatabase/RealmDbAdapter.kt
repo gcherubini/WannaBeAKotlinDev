@@ -1,4 +1,4 @@
-package com.fittech.gcherubini.fittechandroid.view.Realm
+package com.fittech.gcherubini.fittechandroid.view.RealmDatabase
 
 import android.databinding.DataBindingUtil
 import android.support.v7.widget.RecyclerView
