@@ -45,6 +45,15 @@
             android:textStyle="bold"/>
 
         <Button
+            android:id="@+id/btn_shared_preferences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Local Persistence (Shared Prefs)"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <Button
             android:id="@+id/btn_realm_database"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
