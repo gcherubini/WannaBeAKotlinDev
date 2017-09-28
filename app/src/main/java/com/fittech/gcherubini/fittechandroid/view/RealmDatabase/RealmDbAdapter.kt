@@ -27,7 +27,7 @@ class RealmDbAdapter(private val list: List<UserRealm>) : RecyclerView.Adapter<V
 
 class ViewHolder(val binding: ViewHolderRealmDbUserBinding) : RecyclerView.ViewHolder(binding.root){
     fun bind(data: Any) {
-        binding.setVariable(BR.item, data)
+        binding.setVariable(BR.user, data)
         binding.executePendingBindings()
     }
 }
