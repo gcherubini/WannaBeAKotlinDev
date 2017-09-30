@@ -2,5 +2,6 @@
     <string name="app_name">WannaBeAKotlinDev</string>
     <string name="title_activity_list">Simple List</string>
     <string name="title_activity_git_user_repos">GitHub User Repositories</string>
+    <string name="title_activity_shared_prefs">Shared Preference</string>
     <string name="title_activity_realm_db">Realm Database</string>
 </resources>

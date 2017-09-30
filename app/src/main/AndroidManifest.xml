@@ -23,20 +23,22 @@
         <activity
             android:name=".view.RecyclerList.ListActivity"
             android:label="@string/title_activity_list"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".view.Home.HomeActivity" />
+            android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
             android:name=".view.GithubRepositories.GithubReposActivity"
             android:label="@string/title_activity_git_user_repos"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".view.Home.HomeActivity" />
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".view.SharedPrefs.SharedPrefsActivity"
+            android:label="@string/title_activity_shared_prefs"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
             android:name=".view.RealmDatabase.RealmDbActivity"
             android:label="@string/title_activity_realm_db"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".view.Home.HomeActivity" />
+            android:theme="@style/AppTheme.NoActionBar" />
 
     </application>
 

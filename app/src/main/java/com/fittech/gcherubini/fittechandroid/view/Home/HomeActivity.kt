@@ -8,8 +8,9 @@ import com.fittech.gcherubini.fittechandroid.R
 import com.fittech.gcherubini.fittechandroid.databinding.ActivityHomeBinding
 import com.fittech.gcherubini.fittechandroid.model.User
 import com.fittech.gcherubini.fittechandroid.view.GithubRepositories.GithubReposActivity
-import com.fittech.gcherubini.fittechandroid.view.RecyclerList.ListActivity
 import com.fittech.gcherubini.fittechandroid.view.RealmDatabase.RealmDbActivity
+import com.fittech.gcherubini.fittechandroid.view.RecyclerList.ListActivity
+import com.fittech.gcherubini.fittechandroid.view.SharedPrefs.SharedPrefsActivity
 import com.fittech.gcherubini.fittechandroid.view.moveForward
 
 
@@ -28,6 +29,10 @@ class HomeActivity : AppCompatActivity() {
 
         binding.btnGithubUserRepos.setOnClickListener{
             moveForward(GithubReposActivity())
+        }
+
+        binding.btnSharedPreferences.setOnClickListener{
+            moveForward(SharedPrefsActivity())
         }
 
         binding.btnRealmDatabase.setOnClickListener{
