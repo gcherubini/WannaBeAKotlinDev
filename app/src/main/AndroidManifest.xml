@@ -14,6 +14,9 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".view.Home.HomeActivity">
+        </activity>
+
+        <activity android:name=".view.Home.HomeActivityJava">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

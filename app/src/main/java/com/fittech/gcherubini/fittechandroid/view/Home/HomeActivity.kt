@@ -22,21 +22,5 @@ class HomeActivity : AppCompatActivity() {
         val user = User("Albert Eisten")
         binding.setVariable(BR.user, user)
         binding.executePendingBindings()
-
-        binding.btnListRecyclerView.setOnClickListener {
-            moveForward(ListActivity())
-        }
-
-        binding.btnGithubUserRepos.setOnClickListener{
-            moveForward(GithubReposActivity())
-        }
-
-        binding.btnSharedPreferences.setOnClickListener{
-            moveForward(SharedPrefsActivity())
-        }
-
-        binding.btnRealmDatabase.setOnClickListener{
-            moveForward(RealmDbActivity())
-        }
     }
 }

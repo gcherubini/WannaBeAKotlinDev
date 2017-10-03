@@ -8,7 +8,7 @@ import com.fittech.gcherubini.fittechandroid.R
 import com.fittech.gcherubini.fittechandroid.databinding.ActivityRealmDbBinding
 import io.realm.Realm
 import com.fittech.gcherubini.fittechandroid.model.UserRealm
-import com.fittech.gcherubini.fittechandroid.view.showError
+import com.fittech.gcherubini.fittechandroid.view.showAlertDialog
 
 
 class RealmDbActivity : AppCompatActivity() {
@@ -40,7 +40,7 @@ class RealmDbActivity : AppCompatActivity() {
             newUser.age = Integer.parseInt(binding.etUserAge.text.toString())
             persistUser(newUser)
         } else {
-            showError("Please, fill input correctly")
+            showAlertDialog("Please, fill input correctly")
         }
     }
 
@@ -50,7 +50,7 @@ class RealmDbActivity : AppCompatActivity() {
         }, {
             showPersistedUsers()
         }) {
-            showError("Error inserting/updating user")
+            showAlertDialog("Error inserting/updating user")
         }
     }
 

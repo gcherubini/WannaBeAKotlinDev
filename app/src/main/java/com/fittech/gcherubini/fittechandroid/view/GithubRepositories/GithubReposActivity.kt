@@ -10,7 +10,7 @@ import com.fittech.gcherubini.fittechandroid.R
 import com.fittech.gcherubini.fittechandroid.databinding.ActivityGithubUserReposBinding
 import com.fittech.gcherubini.fittechandroid.model.GithubRepository
 import com.fittech.gcherubini.fittechandroid.network.GithubApi
-import com.fittech.gcherubini.fittechandroid.view.showError
+import com.fittech.gcherubini.fittechandroid.view.showAlertDialog
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
@@ -39,7 +39,7 @@ class GithubReposActivity : AppCompatActivity() {
 
     private fun onSearchGitReposBtnClick() {
         if(binding.etGithubUserName?.text?.toString()!!.isBlank()) {
-            showError("Please, fill input correctly")
+            showAlertDialog("Please, fill input correctly")
             return
         }
 
@@ -69,6 +69,6 @@ class GithubReposActivity : AppCompatActivity() {
         loading.visibility = GONE
         binding.recyclerView.adapter = GithubReposAdapter(ArrayList())
         binding.recyclerView.adapter.notifyDataSetChanged()
-        showError(error.message!!)
+        showAlertDialog(error.message!!)
     }
 }
