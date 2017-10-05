@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="user"
+            type="com.fittech.gcherubini.fittechandroid.model.User" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="40dp">
+
+       <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@{` Hello ` + user.name + `\ndatabinding is working`}"
+            tools:text="User Name"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/btn_recycler_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recycler List"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_network_communication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Network communication\n with retrofit"
+            android:background="@android:color/transparent"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_shared_prefs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shared Preferences"
+            android:background="@android:color/transparent"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_realm_database"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Realm Database"
+            android:background="@android:color/transparent"
+            android:textStyle="bold"/>
+
+
+
+    </LinearLayout>
+</layout>

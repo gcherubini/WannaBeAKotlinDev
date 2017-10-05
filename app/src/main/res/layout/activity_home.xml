@@ -15,16 +15,24 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_margin="40dp">
 
-        <TextView
+        <EditText
+            android:id="@+id/edit_text_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="What is your name?"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_send"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@{` Hello ` + user.name + `\ndatabinding is working`}"
-            tools:text="User Name"
-            android:textSize="20sp"/>
-
+            android:layout_marginTop="30dp"
+            android:text="SEND"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"/>
 
     </LinearLayout>
 </layout>
