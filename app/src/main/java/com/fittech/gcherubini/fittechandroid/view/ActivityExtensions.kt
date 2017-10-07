@@ -7,21 +7,21 @@ import android.content.Intent
 import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
 
-fun AppCompatActivity.moveForward(activity: Activity) {
+fun Activity.moveForward(activity: Activity) {
     startActivity(Intent(this, activity.javaClass))
 }
 
-fun AppCompatActivity.moveForward(activity: Activity, param: String, paramValue: String) {
+fun Activity.moveForward(activity: Activity, param: String, paramValue: String) {
     val intent = Intent(this, activity.javaClass)
     intent.putExtra(param, paramValue)
     startActivity(intent)
 }
 
-fun AppCompatActivity.showAlertDialog(message: String) {
+fun Activity.showAlertDialog(message: String) {
     showAlertDialog(message, null)
 }
 
-fun AppCompatActivity.showAlertDialog(message: String, onClickListener: DialogInterface.OnClickListener?) {
+fun Activity.showAlertDialog(message: String, onClickListener: DialogInterface.OnClickListener?) {
     val alert = AlertDialog.Builder(this).create()
     alert.setMessage(message)
 
