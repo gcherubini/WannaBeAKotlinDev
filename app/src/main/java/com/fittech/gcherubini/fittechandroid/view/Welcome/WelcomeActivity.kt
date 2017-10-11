@@ -44,8 +44,8 @@ class WelcomeActivity : AppCompatActivity() {
     private fun loadUser(binding: ActivityWelcomeBinding) {
         intent?.extras?.getString(EXTRA_PARAM_USER_NAME)?.apply {
             val user = User(this)
-            binding.setVariable(BR.user, user)
-            binding.executePendingBindings()
+            binding?.setVariable(BR.user, user)
+            binding?.executePendingBindings()
         }
     }
 }
