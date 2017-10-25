@@ -3,7 +3,6 @@ package com.fittech.gcherubini.fittechandroid.view.Welcome
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import com.fittech.gcherubini.fittechandroid.BR
 import com.fittech.gcherubini.fittechandroid.R
 import com.fittech.gcherubini.fittechandroid.databinding.ActivityWelcomeBinding
 import com.fittech.gcherubini.fittechandroid.model.User
@@ -43,9 +42,7 @@ class WelcomeActivity : AppCompatActivity() {
 
     private fun loadUser(binding: ActivityWelcomeBinding) {
         intent?.extras?.getString(EXTRA_PARAM_USER_NAME)?.let {
-            val user = User(it)
-            binding?.setVariable(BR.user, user)
-            binding?.executePendingBindings()
+            binding?.user = User(it)
         }
     }
 }
