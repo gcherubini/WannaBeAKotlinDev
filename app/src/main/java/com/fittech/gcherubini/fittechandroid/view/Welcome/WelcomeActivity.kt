@@ -14,7 +14,7 @@ import com.fittech.gcherubini.fittechandroid.view.moveForward
 
 class WelcomeActivity : AppCompatActivity() {
     companion object {
-        val EXTRA_PARAM_USER_NAME = "EXTRA_PARAM_USER_NAME"
+        const val EXTRA_PARAM_USER_NAME = "EXTRA_PARAM_USER_NAME"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
