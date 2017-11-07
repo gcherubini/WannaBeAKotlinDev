@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.fittech.gcherubini.fittechandroid">
+    package="com.gcherubini.wannabeakotlindev">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".WannaBeAKotlinDevApplication"
+        android:name="com.gcherubini.wannabeakotlindev.WannaBeAKotlinDevApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -13,7 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".view.Home.HomeActivity">
+        <activity android:name="com.gcherubini.wannabeakotlindev.view.Home.HomeActivity">
+
+        </activity>
+
+        <activity android:name="com.gcherubini.wannabeakotlindev.view.Home.HomeActivityWithViewModel">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -21,26 +25,26 @@
         </activity>
 
         <activity
-            android:name=".view.Welcome.WelcomeActivity"
+            android:name="com.gcherubini.wannabeakotlindev.view.Welcome.WelcomeActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
-            android:name=".view.RecyclerList.ListActivity"
+            android:name="com.gcherubini.wannabeakotlindev.view.RecyclerList.ListActivity"
             android:label="@string/title_activity_list"
             android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
-            android:name=".view.GithubRepositories.GithubReposActivity"
+            android:name="com.gcherubini.wannabeakotlindev.view.GithubRepositories.GithubReposActivity"
             android:label="@string/title_activity_git_user_repos"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".view.SharedPrefs.SharedPrefsActivity"
+            android:name="com.gcherubini.wannabeakotlindev.view.SharedPrefs.SharedPrefsActivity"
             android:label="@string/title_activity_shared_prefs"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".view.RealmDatabase.RealmDbActivity"
+            android:name="com.gcherubini.wannabeakotlindev.view.RealmDatabase.RealmDbActivity"
             android:label="@string/title_activity_realm_db"
             android:theme="@style/AppTheme.NoActionBar" />
 

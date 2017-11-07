@@ -8,7 +8,7 @@
 
         <variable
             name="item"
-            type="com.fittech.gcherubini.fittechandroid.model.ListSimpleModel" />
+            type="com.gcherubini.wannabeakotlindev.model.ListSimpleModel" />
     </data>
 
     <LinearLayout

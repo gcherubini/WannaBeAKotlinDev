@@ -8,7 +8,7 @@
 
         <variable
             name="item"
-            type="com.fittech.gcherubini.fittechandroid.model.GithubRepository" />
+            type="com.gcherubini.wannabeakotlindev.model.GithubRepository" />
     </data>
 
     <LinearLayout
