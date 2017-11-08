@@ -24,6 +24,16 @@ class ListAdapter(private val list: ArrayList<ListSimpleModel>) : RecyclerView.A
         val binding: ViewHolderListBinding = DataBindingUtil.inflate(inflater, R.layout.view_holder_list, parent, false)
         return ViewHolder(binding)
     }
+
+    fun removeItem(pos: Int) {
+        list.removeAt(pos)
+        notifyItemRemoved(pos)
+    }
+
+    fun addItem(pos: Int, item: ListSimpleModel) {
+        list.add(pos, item)
+        notifyItemInserted(pos)
+    }
 }
 
 class ViewHolder(val binding: ViewHolderListBinding) : RecyclerView.ViewHolder(binding.root){

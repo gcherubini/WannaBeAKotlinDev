@@ -1,5 +1,6 @@
 package com.fittech.gcherubini.fittechandroid.model
 
 data class ListSimpleModel(
-        val name: String
+        val name: String,
+        val isHighlighted: Boolean
 )
