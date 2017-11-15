@@ -7,7 +7,7 @@ import com.gcherubini.wannabeakotlindev.R
 import com.gcherubini.wannabeakotlindev.databinding.ActivityHomeWithViewModelBinding
 
 class HomeActivityWithViewModel : Activity() {
-    val layoutFile = R.layout.activity_home_with_view_model
+    private val layoutFile = R.layout.activity_home_with_view_model
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
