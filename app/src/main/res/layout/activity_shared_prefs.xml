@@ -6,7 +6,7 @@
     <data>
         <variable
             name="prefs"
-            type="com.fittech.gcherubini.fittechandroid.storage.SharedPrefs" />
+            type="com.gcherubini.wannabeakotlindev.storage.SharedPrefs" />
     </data>
 
    <LinearLayout

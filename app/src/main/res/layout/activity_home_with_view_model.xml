@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.gcherubini.wannabeakotlindev.view.Home.HomeViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="40dp">
+
+        <EditText
+            android:id="@+id/edit_text_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="What is your name?"
+            android:text="@={viewModel.userName}"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="SEND"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:onClick="@{viewModel::onSendBtnClick}"/>
+
+    </LinearLayout>
+</layout>

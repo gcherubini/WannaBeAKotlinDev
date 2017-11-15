@@ -8,7 +8,7 @@
 
         <variable
             name="user"
-            type="com.fittech.gcherubini.fittechandroid.model.UserRealm" />
+            type="com.gcherubini.wannabeakotlindev.model.UserRealm" />
     </data>
 
     <LinearLayout
