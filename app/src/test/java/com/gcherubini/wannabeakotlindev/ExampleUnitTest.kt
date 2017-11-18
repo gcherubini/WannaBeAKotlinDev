@@ -1,17 +1,22 @@
 package com.gcherubini.wannabeakotlindev
 
+import android.app.Activity
+import com.gcherubini.wannabeakotlindev.view.Home.HomeViewModel
+import com.gcherubini.wannabeakotlindev.view.Welcome.WelcomeActivity
 import org.junit.Test
 
-import org.junit.Assert.*
+import org.mockito.Mockito.verify
 
-/**
- * Example local unit test, which will execute on the development machine (host).
- *
- * See [testing documentation](http://d.android.com/tools/testing).
- */
+
 class ExampleUnitTest {
+
+    val activity = Activity()
+    var viewModel = HomeViewModel(activity)
+
     @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+    fun moveForward() {
+        viewModel.userName.set("Jogado")
+        viewModel.onSendBtnClick(null)
+        verify(activity).moveForward(WelcomeActivity(), WelcomeActivity.EXTRA_PARAM_USER_NAME, viewModel.userName.get())
     }
 }

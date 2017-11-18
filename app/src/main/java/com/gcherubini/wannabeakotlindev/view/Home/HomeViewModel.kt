@@ -11,9 +11,10 @@ import com.gcherubini.wannabeakotlindev.view.Welcome.WelcomeActivity
 class HomeViewModel(var act: Activity) {
     var userName = ObservableField<String>()
 
-    fun onSendBtnClick(view: View) {
+    fun onSendBtnClick(view: View?) {
         if (userName?.get()?.isNotBlank()!!) {
             act?.moveForward(WelcomeActivity(), WelcomeActivity.EXTRA_PARAM_USER_NAME, userName.get())
+           // goToNext(userName.get())
             return
         }
 

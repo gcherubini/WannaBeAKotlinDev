@@ -5,6 +5,8 @@ import android.databinding.DataBindingUtil
 import android.os.Bundle
 import com.gcherubini.wannabeakotlindev.R
 import com.gcherubini.wannabeakotlindev.databinding.ActivityHomeWithViewModelBinding
+import com.gcherubini.wannabeakotlindev.moveForward
+import com.gcherubini.wannabeakotlindev.view.Welcome.WelcomeActivity
 
 class HomeActivityWithViewModel : Activity() {
     private val layoutFile = R.layout.activity_home_with_view_model
@@ -12,6 +14,12 @@ class HomeActivityWithViewModel : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding: ActivityHomeWithViewModelBinding = DataBindingUtil.setContentView(this, layoutFile)
-        binding?.viewModel = HomeViewModel(this)
+
+        binding?.viewModel = HomeViewModel(
+                this/*,
+                fun(userName) = moveForward(WelcomeActivity(), WelcomeActivity.EXTRA_PARAM_USER_NAME, userName)*/
+        )
     }
+
+
 }
